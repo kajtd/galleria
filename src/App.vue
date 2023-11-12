@@ -1,8 +1,11 @@
 <script setup lang="ts">
+  import ImageGallery from './components/ImageGallery.vue';
+  import TheHeader from './components/TheHeader.vue';
 </script>
 
 <template>
-  <div class="bg-green-500 w-12 h-12">
+  <div class="my-0 mx-auto p-6 md:p-10">
+    <TheHeader />
+    <ImageGallery />
   </div>
 </template>
-

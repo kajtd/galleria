@@ -1,18 +1,67 @@
-# Vue 3 + TypeScript + Vite
+# ArtGallery 🎨
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welcome to the ArtGallery project! This is a result of the challenge provided by Frontend Mentor.
 
-## Recommended IDE Setup
+## Table of Contents
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [ArtGallery 🎨](#artgallery-)
+  - [Table of Contents](#table-of-contents)
+  - [About The Project](#about-the-project)
+  - [Technologies](#technologies)
+  - [Getting Started](#getting-started)
+    - [Installation](#installation)
+  - [Usage](#usage)
+  - [Roadmap](#roadmap)
+  - [Contributing](#contributing)
+  - [Acknowledgments](#acknowledgments)
 
-## Type Support For `.vue` Imports in TS
+## About The Project
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+![Website img](./galleria-capture.webp)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+The objective was to build an interactive and visually appealing Art Gallery that users can explore on their browsers.
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Technologies
+
+- Vue: 3.3.4
+- Typescript: 5.0.2
+- Tailwind: 3.3.5
+
+## Getting Started
+
+Here is how you can set up this project by yourself. To get a local copy up and running, follow these simple example steps.
+
+### Installation
+
+1. Clone the repository.
+2. Install NPM packages and run the app using `npm run dev`
+
+## Usage
+
+Below, you can read the features of the Art Gallery.
+
+1. Interactive Gallery: Explore a variety of artworks in a virtual environment.
+2. Responsive Design: Optimized for desktop and mobile screens.
+
+## Roadmap
+
+- [ ] Add more artworks to the gallery
+- [ ] Implement a feature to allow users to upload their own artworks
+
+## Contributing
+
+Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+## Acknowledgments
+
+- [Frontend-Mentor](https://www.frontendmentor.io/challenges/galleria-slideshow-site-tEA4pwsa6)
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)

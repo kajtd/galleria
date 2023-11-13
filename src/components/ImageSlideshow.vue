@@ -25,18 +25,18 @@
 </script>
 
 <template>
-  <div class="w-full flex flex-col justify-between">
+  <div class="w-full flex flex-col justify-between h-full">
     <TheSlide :slide="currentSlide" />
     <footer
-      class="w-full pb-[25px] border-t mt-[75px] pt-6 px-10 border-very-light-gray flex justify-between"
+      class="w-full pb-[25px] border-t mt-16 md:mt-6 xl:mt-[75px] pt-6 px-6 md:px-10 border-very-light-gray flex justify-between"
     >
       <div>
-        <div class="text-[18px] font-bold">{{ currentSlide?.name }}</div>
-        <div class="text-[13px] opacity-75 mt-2">
+        <div class="text-base font-bold">{{ currentSlide?.name }}</div>
+        <div class="text-[10px] opacity-75 mt-2">
           {{ currentSlide?.artist.name }}
         </div>
       </div>
-      <div class="flex items-center gap-10">
+      <div class="flex items-center gap-6 md:gap-10">
         <button
           class="disabled:opacity-25"
           :disabled="currentSlideIndex === 0"
@@ -45,6 +45,7 @@
           <img
             src="./../../public/assets/shared/icon-back-button.svg"
             alt="icon-back-button"
+            class="w-4 h-4"
           />
         </button>
         <button
@@ -55,6 +56,7 @@
           <img
             src="./../../public/assets/shared/icon-next-button.svg"
             alt="icon-next-button"
+            class="w-4 h-4"
           />
         </button>
       </div>

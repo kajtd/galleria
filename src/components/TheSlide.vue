@@ -41,7 +41,7 @@
         :alt="slide.name"
       />
       <button
-        class="absolute top-4 left-4 md:bottom-4 md:top-auto xl:left-4 xl:bottom-24 bg-[rgba(0,0,0,0.75)] text-white flex items-center py-[14px] px-4 gap-[14px]"
+        class="absolute top-4 left-4 md:bottom-4 md:top-auto xl:left-4 xl:bottom-24 bg-[rgba(0,0,0,0.75)] transition-colors hover:bg-[rgba(255,255,255,0.25)] text-white flex items-center py-[14px] px-4 gap-[14px]"
         @click="viewImage(slide.images.gallery, slide.name)"
       >
         <img
@@ -79,7 +79,7 @@
         {{ slide.description }}
       </p>
       <a
-        class="uppercase underline mt-16 md:mt-20 tracking-[1.93px] text-[9px] font-bold text-gray xl:relative xl:right-16"
+        class="uppercase underline mt-16 md:mt-20 tracking-[1.93px] text-[9px] font-bold transition-colors text-gray hover:text-black xl:relative xl:right-16"
         :href="slide.source"
         target="_blank"
       >

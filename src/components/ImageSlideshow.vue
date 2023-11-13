@@ -48,7 +48,7 @@
       </div>
       <div class="flex items-center gap-6 md:gap-10">
         <button
-          class="disabled:opacity-25"
+          class="disabled:opacity-25 hover:opacity-50 transition-opacity"
           :disabled="currentSlideIndex === 0"
           @click="previousSlide"
         >
@@ -59,7 +59,7 @@
           />
         </button>
         <button
-          class="disabled:opacity-25"
+          class="disabled:opacity-25 hover:opacity-50 transition-opacity"
           :disabled="currentSlideIndex === slides.length - 1"
           @click="nextSlide"
         >

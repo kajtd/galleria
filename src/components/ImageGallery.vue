@@ -4,7 +4,7 @@
 
 <template>
   <div
-    class="max-w-[1360px] mx-auto w-full lg:columns-3 sm:columns-2 gap-6 md:gap-10"
+    class="px-6 md:px-10 max-w-[1360px] mx-auto w-full lg:columns-3 sm:columns-2 gap-6 md:gap-10"
   >
     <div
       v-for="item in items"
@@ -13,7 +13,7 @@
     >
       <img class="" :src="item.images.gallery" :alt="item.name" />
       <div
-        class="absolute bottom-3 lg:bottom-5 h-[170px] lg:h-[310px] pl-8 flex flex-col justify-end pb-9 gap-2 w-full bg-image-art-background z-40"
+        class="absolute bottom-3 lg:bottom-5 h-[170px] lg:max-h-[310px] pl-8 flex flex-col justify-end pb-9 gap-2 w-full bg-image-art-background z-40"
       >
         <div class="text-2xl font-bold text-white">
           {{ item.name }}

@@ -26,6 +26,10 @@ body {
   width: 100%;
 }
 
+body.modal {
+  overflow: hidden;
+}
+
 #app {
   margin: 0 auto;
   min-height: 100vh;

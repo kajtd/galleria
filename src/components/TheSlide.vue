@@ -1,6 +1,27 @@
 <script setup lang="ts">
-  import { defineProps } from 'vue';
+  import { ref } from 'vue';
   import { Slide } from '../types/slide';
+  import { Image } from '../types/image';
+  import ImageModal from './ImageModal.vue';
+
+  const image = ref<Image>({
+    url: '',
+    alt: '',
+  });
+
+  const isImageModalVisible = ref(false);
+
+  const viewImage = (url = '', alt = '') => {
+    image.value.url = url;
+    image.value.alt = alt;
+    isImageModalVisible.value = true;
+    document.querySelector('body')?.classList.add('modal');
+  };
+
+  const closeImageModal = () => {
+    isImageModalVisible.value = false;
+    document.querySelector('body')?.classList.remove('modal');
+  };
 
   withDefaults(
     defineProps<{
@@ -16,11 +37,24 @@
   <div
     class="flex flex-col xl:flex-row relative mt-0 md:mt-20 max-w-[1360px] mx-auto px-6 md:px-10 w-full"
   >
-    <img
-      class="w-[327px] h-[280px] md:w-[475px] md:h-[560px] object-cover"
-      :src="slide?.images.gallery"
-      :alt="slide?.name"
-    />
+    <div class="relative">
+      <img
+        class="w-[327px] h-[280px] md:w-[475px] md:h-[560px] object-cover"
+        :src="slide?.images.gallery"
+        :alt="slide?.name"
+      />
+      <button
+        class="absolute top-4 left-4 md:bottom-4 md:top-auto xl:left-4 xl:bottom-24 bg-[rgba(0,0,0,0.75)] text-white flex items-center py-[14px] px-4 gap-[14px]"
+        @click="viewImage(slide?.images.gallery, slide?.name)"
+      >
+        <img
+          src="./../../public/assets/shared/icon-view-image.svg"
+          alt="view image icon"
+          class="w-3 h-3"
+        />
+        <span class="text-[10px] uppercase font-bold">View Image</span>
+      </button>
+    </div>
     <div
       class="bg-white pt-6 relative bottom-16 right-8 pl-12 w-[280px] h-[133px] md:w-[445px] md:h-[302px] md:absolute md:top-0 xl:relative xl:right-16"
     >
@@ -56,4 +90,9 @@
       </a>
     </div>
   </div>
+  <ImageModal
+    v-show="isImageModalVisible"
+    :image="image"
+    @close-image-modal="closeImageModal"
+  />
 </template>

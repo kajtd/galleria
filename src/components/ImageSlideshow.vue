@@ -53,7 +53,7 @@
           @click="previousSlide"
         >
           <img
-            src="./../../public/assets/shared/icon-back-button.svg"
+            src="assets/shared/icon-back-button.svg"
             alt="icon-back-button"
             class="w-4 h-4"
           />
@@ -64,7 +64,7 @@
           @click="nextSlide"
         >
           <img
-            src="./../../public/assets/shared/icon-next-button.svg"
+            src="assets/shared/icon-next-button.svg"
             alt="icon-next-button"
             class="w-4 h-4"
           />

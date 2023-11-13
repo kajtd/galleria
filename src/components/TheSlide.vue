@@ -45,7 +45,7 @@
         @click="viewImage(slide.images.gallery, slide.name)"
       >
         <img
-          src="./../../public/assets/shared/icon-view-image.svg"
+          src="assets/shared/icon-view-image.svg"
           alt="view image icon"
           class="w-3 h-3"
         />

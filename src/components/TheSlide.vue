@@ -34,7 +34,7 @@
   <div
     class="flex flex-col xl:flex-row relative mt-0 md:mt-20 max-w-[1360px] mx-auto px-6 md:px-10 w-full"
   >
-    <div class="relative h-[280px] md:h-[560px]">
+    <div class="relative w-[327px] h-[280px] md:w-[475px] md:h-[560px]">
       <img
         class="w-[327px] h-[280px] md:w-[475px] md:h-[560px] object-cover"
         :src="slide.images.gallery"

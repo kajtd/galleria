@@ -4,7 +4,7 @@
   import { Slide } from '../types/slide';
   import TheSlide from './TheSlide.vue';
 
-  const slides = computed(() => items);
+  const slides = computed<Slide[]>(() => items);
 
   const currentSlideIndex = ref(0);
   const currentSlide = computed<Slide>(

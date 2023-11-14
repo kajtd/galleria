@@ -1,10 +1,10 @@
-# ArtGallery 🎨
+# galleria 🎨
 
-Welcome to the ArtGallery project! This is a result of the challenge provided by Frontend Mentor.
+Welcome to the galleria project! This is a result of the challenge provided by Frontend Mentor.
 
 ## Table of Contents
 
-- [ArtGallery 🎨](#artgallery-)
+- [galleria 🎨](#galleria-)
   - [Table of Contents](#table-of-contents)
   - [About The Project](#about-the-project)
   - [Technologies](#technologies)
@@ -19,7 +19,7 @@ Welcome to the ArtGallery project! This is a result of the challenge provided by
 
 ![Website img](./galleria-capture.webp)
 
-The objective was to build an interactive and visually appealing Art Gallery that users can explore on their browsers.
+The objective was to build an interactive and visually appealing art gallery that users can explore on their browsers.
 
 ## Technologies
 
@@ -38,7 +38,7 @@ Here is how you can set up this project by yourself. To get a local copy up and 
 
 ## Usage
 
-Below, you can read the features of the Art Gallery.
+Below, you can read the features of the galleria.
 
 1. Interactive Gallery: Explore a variety of artworks in a virtual environment.
 2. Responsive Design: Optimized for desktop and mobile screens.
